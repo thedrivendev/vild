@@ -12,35 +12,52 @@ html {
 
 body {
   background: linear-gradient(to right, #30304f, #474773);
-  /* background: linear-gradient(to right, hsla(240, 18%, 17%, 1), #474773); */
-  margin: 0 auto;
+  margin: 0 0;
   display: flex;
   flex-direction: column;
-  /* max-width: 1440px; */
-  /* border: 1px solid aquamarine */
+  align-items: center;
+  width: 100%;
 }
 
+.container {
+  display: flex;
+  width: calc(80vw - 2rem);
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  justify-content: space-between;
+}
 header,
+main,
 footer {
-  padding: 0 0.8rem;
+  width: 100%;
+  /* padding: 0vw 10vw;
   flex: 1;
+  width: 80vw;
+  max-width: 1200px; */
   /* border: 1px solid #CCC; */
 }
 
 header {
   /* position: absolute; */
-  min-height: 10rem;
+  /* min-height: 10rem; */
   box-sizing: border-box;
-  width: 100%;
-  display: flex;
+  padding: 1rem 0rem;
+  /* width: 100%; */
+  /* display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-between;
-  padding: 0.8rem;
+  justify-content: space-between; */
+  /* padding: 0.8rem; */
   z-index: 1000;
   flex: 1;
-  min-height: 6rem;
 }
 
 img.logo {
@@ -86,7 +103,7 @@ ul.menu li:last-child {
   /* border: 1px solid aquamarine; */
   font-size: 4.8rem;
   line-height: 7.8rem;
-  padding: 2rem 18rem;
+  /* padding: 2rem 18rem; */
   /* padding: 2rem; */
   /* letter-spacing: .1rem; */
 }
@@ -101,6 +118,7 @@ div.brand-message {
 
 h2 {
   display: block;
+  width: 100%;
   margin: 2rem;
   /* margin: 0 18rem; */
   font-size: 6.4rem;
@@ -112,6 +130,7 @@ h2 {
 
 h3 {
   display: block;
+  width: 100%;
   margin: 2rem;
   /* margin: 0 18rem; */
   font-size: 4.8rem;
@@ -158,7 +177,7 @@ footer {
 }
 
 span.footer {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 
 #connect {

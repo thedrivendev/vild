@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible"
+    content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+  <title>VILD: Strategic & Digital Consulting Experts</title>
+  <style>
+    html {
+      font-size: 10px;
+      font-family: 'Nunito', Arial, sans-serif;
+      color: #DBE5F0;
+    }
+
+    @media all and (min-width: 601px) {
+      #burger {
+        display: none
+      }
+    }
+
+    body {
+      background: linear-gradient(to right, #30304F, #474773);
+      /* background: linear-gradient(to right, hsla(240, 18%, 17%, 1), #474773); */
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      /* max-width: 1440px; */
+      /* border: 1px solid aquamarine */
+    }
+
+    header,
+    footer {
+      padding: 0 0.8rem;
+      flex: 1;
+      /* border: 1px solid #CCC; */
+    }
+
+    header {
+      /* position: absolute; */
+      min-height: 10rem;
+      box-sizing: border-box;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.8rem;
+      z-index: 1000;
+      flex: 1;
+      min-height: 6rem;
+    }
+
+    img.logo {
+      max-height: 6rem;
+    }
+
+    #menu {
+      /* width: 25vw; */
+      padding: 1.2rem 0;
+    }
+
+    ul.menu {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: flex-end;
+      justify-content: space-between;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      font-size: 2.4rem;
+      text-align: right;
+    }
+
+    ul.menu li {
+      width: auto;
+      display: block;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      /* padding: 0.4rem; */
+    }
+
+    ul.menu li:first-child {
+      padding-left: 0;
+    }
+
+    ul.menu li:last-child {
+      padding-right: 0;
+    }
+
+    .content-card {
+      /* height: 60rem; */
+      /* border: 1px solid aquamarine; */
+      font-size: 4.8rem;
+      line-height: 7.8rem;
+      padding: 2rem 18rem;
+      /* padding: 2rem; */
+      /* letter-spacing: .1rem; */
+    }
+
+    div.brand-message {
+      height: 60rem;
+      background: url(./home-brand-desktop.png) no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    h2 {
+      display: block;
+      margin: 2rem;
+      /* margin: 0 18rem; */
+      font-size: 6.4rem;
+      line-height: 10.2rem;
+      /* padding: .8rem 0rem .8rem .8rem; */
+      /* padding-right: 3rem; */
+      text-align: right;
+    }
+
+    h3 {
+      display: block;
+      margin: 2rem;
+      /* margin: 0 18rem; */
+      font-size: 4.8rem;
+      line-height: 7.6rem;
+      /* padding: .8rem 0rem; */
+      text-align: left;
+    }
+
+    div.home-description {
+      /* margin: 0 18rem; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* line-height: 3.2rem; */
+    }
+
+    div.home-cta {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      background: url(./home-nav-links.png) no-repeat;
+      background-size: cover;
+    }
+
+    ul.home-cta {
+      padding: 0;
+      list-style-type: none;
+    }
+
+    .home-cta li {
+      /* font-size: 2.2rem; */
+      padding: 1.6rem 0.8rem;
+    }
+
+    footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 6.6rem;
+      background: hsla(240, 18%, 17%, 1);
+      /* background: linear-gradient(to right, hsla(240, 18%, 17%, 1), hsla(240, 18%, 33%, 1)); */
+    }
+
+    span.footer {
+      font-size: 1.8rem;
+    }
+
+    #connect {
+      position: absolute;
+      right: 1rem;
+      padding: 1.6rem 2.4rem 0.8rem 2.4rem;
+      margin-top: 1rem;
+
+      /* font-weight: bold ; */
+      letter-spacing: 0.2rem;
+      font-size: 2.4rem;
+      border-radius: 1.4rem 1.4rem 0 0;
+      background-color: #4D4DFF;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+    @media only screen and (max-width: 600px) {
+      body {
+        /* height: 100%; */
+        /* background: linear-gradient(to right, hsla(240, 40%, 31%, 1.0), hsla(240, 40%, 44%, 1.0)); */
+        background: linear-gradient(to right, #30304F, #474773);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        /* max-width: 390px; */
+      }
+
+      header,
+      footer {
+        padding: 0 0.8rem;
+        flex: 1;
+        min-height: 6rem;
+        /* border: 1px solid #CCC; */
+      }
+
+      header {
+        /* position: absolute; */
+        box-sizing: border-box;
+        /* background: linear-gradient(to right, #30304F, #474773); */
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0.8rem;
+        z-index: 1000;
+        flex: 1;
+        min-height: 6rem;
+      }
+
+      #logo {
+        height: 3.2rem
+      }
+
+      img.logo {
+        /* width: 18.6rem; */
+        height: 3.2rem;
+      }
+
+      #menu {
+        flex: 100%;
+        padding: 1.2rem 0;
+      }
+
+      ul.menu {
+        flex-direction: column;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 1.8rem;
+        text-align: right
+      }
+
+      ul.menu li {
+        padding: 0.4rem;
+      }
+
+      main {
+        /* flex: 6; */
+        min-height: 48rem;
+        /* border: 1px solid #CCC; */
+      }
+
+      .content-card {
+        height: 28rem;
+        /* border: 1px solid aquamarine; */
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        padding: 0;
+        /* padding: 2rem; */
+        /* letter-spacing: .1rem; */
+      }
+
+
+      /* h2 {
+        display: block;
+        margin: 2rem;
+        font-size: 6.4rem;
+        line-height: 10.2rem;
+        text-align: right;
+      }
+
+      h3 {
+        display: block;
+        margin: 2rem;
+        font-size: 4.8rem;
+        line-height: 7.6rem;
+        text-align: left;
+      } */
+
+      h2 {
+        display: block;
+        /* flex: 1; */
+        /* width: 100%; */
+        font-size: 2.2rem;
+        line-height: 3.6rem;
+        /* padding: .8rem 0rem; */
+        text-align: right;
+        margin: 1rem;
+      }
+
+      h3 {
+        display: block;
+        /* flex: 1; */
+        /* width: 100%; */
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        /* padding: .8rem 0rem; */
+        text-align: left;
+        margin: 1rem;
+      }
+
+      div.home-cta {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background: url(./home-nav-links.png) no-repeat;
+        background-size: cover;
+      }
+
+      div.brand-message {
+        background: url(./home-brand-mobile.png) no-repeat;
+        display: flex;
+        flex-direction: column;
+        height: 28rem;
+        /* align-items: center; */
+        /* justify-content: space-between */
+      }
+
+      span.brand {
+        padding-left: 0.4rem;
+        letter-spacing: 0.6rem;
+      }
+
+      div.home-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        line-height: 3.2rem;
+        padding: 2rem;
+      }
+
+      .home-cta li {
+        font-size: 2.2rem;
+        padding: 1.6rem 0.8rem;
+      }
+
+      footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 1rem;
+      }
+
+      span.footer {
+        margin: 2rem 0 1rem 0;
+        font-size: 1.4rem;
+        color: hsla(210, 9%, 64%, 1);
+      }
+
+      #connect {
+        position: relative;
+        right: 0;
+        width: 24rem;
+        height: 3.4rem;
+        padding-top: 1.6rem;
+        margin: 1rem;
+        /* margin-right: 1rem; */
+
+        font-weight: bold;
+        font-size: 1.8rem;
+        border-radius: .8rem .8rem;
+        background-color: #4D4DFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div id="logo">
+      <img class="logo"
+        src="./logo.png" />
+    </div>
+    </div>
+    <div id="burger">
+      <svg width="32"
+        height="22"
+        viewBox="0 0 32 22"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <line x1="1"
+          y1="1"
+          x2="31"
+          y2="1"
+          stroke="#DBE6F0"
+          stroke-width="2"
+          stroke-linecap="round" />
+        <line x1="1"
+          y1="11"
+          x2="31"
+          y2="11"
+          stroke="#DBE6F0"
+          stroke-width="2"
+          stroke-linecap="round" />
+        <line x1="1"
+          y1="21"
+          x2="31"
+          y2="21"
+          stroke="#DBE6F0"
+          stroke-width="2"
+          stroke-linecap="round" />
+      </svg>
+    </div>
+    <div id="menu">
+      <!-- <div id="menu"
+      style="display:none"> -->
+      <ul class="menu">
+        <li>Services</li>
+        <li>Work</li>
+        <li>Team</li>
+        <li>Connect</li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div class="content-card brand-message">
+      <h3>Expert support for your strategy.</h3>
+      <h2>Let your business run <span class="brand">VILD</span>.</h2>
+    </div>
+    <div class="content-card home-description">
+      <p>VILD provides strategic and digital services to strengthen your business.</p>
+      <p>
+        Our team has decades of business experience leading organizational growth, brand expansion, and digital
+        transformation.
+      </p>
+    </div>
+    <div class="content-card home-cta">
+      <ul class="home-cta">
+        <li>&#9744 Browse our services</li>
+        <li>&#9744 See our recent work</li>
+        <li>&#9744 Learn more about VILD</li>
+        <li>&#9744 Connect to get started</li>
+      </ul>
+    </div>
+  </main>
+  <footer>
+    <div id="connect">
+      Connect with Us
+    </div>
+    <span class="footer">
+      © 2022 - All Rights Reserved
+    </span>
+  </footer>
+</body>
+<link rel="preconnect"
+  href="https://fonts.googleapis.com">
+<link rel="preconnect"
+  href="https://fonts.gstatic.com"
+  crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+  rel="stylesheet">
+
+</html>

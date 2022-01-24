@@ -21,6 +21,7 @@ html {
 
 body {
   background: linear-gradient(to right, #30304f, #474773);
+  background-color: #4d4dff;
   margin: 0 0;
   display: flex;
   flex-direction: column;

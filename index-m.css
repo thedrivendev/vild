@@ -1,0 +1,171 @@
+@supports (padding: max(0px)) {
+  body,
+  header,
+  footer {
+    padding-left: min(0vmin, env(safe-area-inset-left));
+    padding-right: min(0vmin, env(safe-area-inset-right));
+  }
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Nunito', Arial, sans-serif;
+  color: #dbe5f0;
+  padding: env(safe-area-inset);
+}
+
+.menu {
+  display: none;
+}
+
+body {
+  background: linear-gradient(to right, #30304f, #474773);
+  margin: 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  z-index: 1000;
+  flex: 1;
+  min-height: 6rem;
+}
+
+.container {
+  display: flex;
+  width: calc(100% - 2rem);
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  max-width: 1200px;
+}
+
+.header {
+  justify-content: space-between;
+}
+
+img.logo {
+  max-width: 40vw;
+}
+
+#menu {
+  flex: 100%;
+  padding: 1.2rem 0;
+}
+
+ul.menu {
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.28rem;
+  text-align: right;
+}
+
+ul.menu li {
+  padding: 0.4rem;
+}
+
+.content-card {
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  line-height: 2.8rem;
+}
+
+h2 {
+  width: 100%;
+  margin: 1rem;
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 3.6rem;
+  text-align: right;
+}
+
+h3 {
+  width: 100%;
+  margin: 1rem;
+  font-size: clamp(1.6rem, 4vw, 3.2rem);
+  line-height: 2.8rem;
+  text-align: left;
+}
+
+div.brand-message {
+  display: flex;
+  flex-direction: column;
+  background: url(./assets/home-brand-mobile.png) no-repeat;
+  height: 28rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+div.home-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+div.home-cta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: url(./assets/home-nav-links.png) no-repeat;
+  background-size: cover;
+}
+
+span.brand {
+  padding-left: 0.4rem;
+  letter-spacing: 0.6rem;
+}
+
+ul.home-cta {
+  padding: 0;
+  list-style-type: none;
+}
+
+.home-cta li {
+  font-size: 2.2rem;
+  padding: 1.6rem 0.8rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+span.footer {
+  margin: 2rem 0 1rem 0;
+  font-size: 1.4rem;
+  color: hsla(210, 9%, 64%, 1);
+}
+
+#connect {
+  position: relative;
+  right: 0;
+  /* height: 3.4rem; */
+  padding: 1.8rem 5.4rem;
+  margin: 1rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+  border-radius: 0.8rem 0.8rem;
+  background-color: #4d4dff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
